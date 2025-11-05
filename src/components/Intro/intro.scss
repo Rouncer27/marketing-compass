@@ -30,5 +30,24 @@
   &-right {
     width: calc(40%);
     padding: 2rem;
+
+    &-image {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+
+    &-dates {
+      width: 100%;
+
+      h3,
+      p {
+        color: $shadowColor;
+        margin: 0;
+      }
+
+      &-block {
+        margin-bottom: 4rem;
+      }
+    }
   }
 }
