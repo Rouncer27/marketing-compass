@@ -46,13 +46,13 @@
   }
 
   h3 {
-    @extend .hl-three;
+    @extend .hl-two;
   }
 
   h4,
   h5,
   h6 {
-    @extend .hl-four;
+    @extend .hl-two;
   }
 
   ul {
