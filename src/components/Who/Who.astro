@@ -1,0 +1,57 @@
+---
+import Headline from "../shared/Headline.astro";
+import Wrapper from "../shared/Wrapper.astro";
+import "./who.scss";
+
+import whoImage from "../../assets/marketingcompass-6@3x.png";
+import booksImage from "../../assets/books-band@3x.jpg";
+import { Image } from "astro:assets";
+---
+
+<div class="who">
+  <div class="who-strip">
+    <Image
+      src={booksImage}
+      alt={"What if ypu had a proven system to achieve all of your ambitions this year? Save your seat."}
+      width={booksImage.width}
+      height={booksImage.height}
+    />
+  </div>
+  <Wrapper classes="who-wrapper">
+    <div class="who-content">
+      <div class="who-content-title">
+        <Headline ele="h2" hlstyle="" two>Who is this workshop for? </Headline>
+      </div>
+      <div class="who-content-paragraphs">
+        <p>If You...</p>
+        <p>
+          Have been looking for marketing support, and want to learn how to do
+          it yourself.
+        </p>
+        <p>
+          Feel like you have strong marketing knowledge, but fail to apply it to
+          your business in an exciting way.
+        </p>
+        <p>
+          Are struggling to have a solid strategy for your marketing and don’t
+          know where to start.
+        </p>
+        <p>
+          Want to try something new by focusing on storytelling to drive your
+          business.
+        </p>
+        <p>
+          Then this COURSE is for you!<br /> Gain clarity on your time and efforts
+        </p>
+      </div>
+    </div>
+    <div class="who-image">
+      <Image
+        src={whoImage}
+        alt={"What if ypu had a proven system to achieve all of your ambitions this year? Save your seat."}
+        width={whoImage.width}
+        height={whoImage.height}
+      />
+    </div>
+  </Wrapper>
+</div>
