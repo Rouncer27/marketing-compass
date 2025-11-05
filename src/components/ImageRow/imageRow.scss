@@ -1,0 +1,27 @@
+.image-row {
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-image {
+    width: calc(25% - 0.45rem);
+  }
+
+  .image-one {
+    margin-right: 0.45rem;
+  }
+  .image-two {
+    margin-right: 0.3rem;
+    margin-left: 0.15rem;
+  }
+  .image-three {
+    margin-right: 0.15rem;
+    margin-left: 0.3rem;
+  }
+  .image-four {
+    margin-left: 0.45rem;
+  }
+}

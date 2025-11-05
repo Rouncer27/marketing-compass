@@ -1,0 +1,45 @@
+---
+import "./imageRow.scss";
+import rowOne from "../../assets/mc-ad-2@3x.jpg";
+import rowTwo from "../../assets/compass-notes@3x.jpg";
+import rowThree from "../../assets/mc-ad-3@3x.jpg";
+import rowFour from "../../assets/laptop-m-cset@3x.jpg";
+import { Image } from "astro:assets";
+---
+
+<div class="image-row">
+  <div class="image-row-wrapper">
+    <div class="image-row-image image-one">
+      <Image
+        src={rowOne}
+        alt={"Suzy Rounce sitting working on her laptop"}
+        width={rowOne.width}
+        height={rowOne.height}
+      />
+    </div>
+    <div class="image-row-image image-two">
+      <Image
+        src={rowTwo}
+        alt={"Suzy Rounce sitting working on her laptop"}
+        width={rowTwo.width}
+        height={rowTwo.height}
+      />
+    </div>
+    <div class="image-row-image image-three">
+      <Image
+        src={rowThree}
+        alt={"Suzy Rounce sitting working on her laptop"}
+        width={rowThree.width}
+        height={rowThree.height}
+      />
+    </div>
+    <div class="image-row-image image-four">
+      <Image
+        src={rowFour}
+        alt={"Suzy Rounce sitting working on her laptop"}
+        width={rowFour.width}
+        height={rowFour.height}
+      />
+    </div>
+  </div>
+</div>
