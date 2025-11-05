@@ -1,0 +1,80 @@
+---
+import Headline from "../shared/Headline.astro";
+import Wrapper from "../shared/Wrapper.astro";
+import "./suzy.scss";
+import { Image } from "astro:assets";
+import suzyImage from "../../assets/suzyphoto@3x.png";
+import swbLogo from "../../assets/swb-logo@3x.png";
+import rabLogo from "../../assets/raisingbusineslogo@3x.png";
+---
+
+<div class="suzy">
+  <Wrapper classes="suzy-wrapper">
+    <div class="suzy-images">
+      <div class="suzy-images-image image-bio">
+        <Image
+          src={suzyImage}
+          alt={"Suzy Rounce, Creative Director, Switchback Creative."}
+          width={suzyImage.width}
+          height={suzyImage.height}
+        />
+      </div>
+      <div class="suzy-images-image image-swb">
+        <a href="https://switchbackcreative.ca" target="_blank" rel="noopener">
+          <Image
+            src={swbLogo}
+            alt={"Switchback Creative."}
+            width={swbLogo.width}
+            height={swbLogo.height}
+          />
+        </a>
+      </div>
+      <div class="suzy-images-image image-rab">
+        <a href="https://raisingabusiness.com/" target="_blank" rel="noopener">
+          <Image
+            src={rabLogo}
+            alt={"Raising a Business Podcast."}
+            width={rabLogo.width}
+            height={rabLogo.height}
+          />
+        </a>
+      </div>
+    </div>
+    <div class="suzy-content">
+      <div class="suzy-content-title">
+        <Headline ele="h2" hlstyle="two"
+          >About your guide<br /> Suzy Rounce, Creative Director, Switchback Creative</Headline
+        >
+      </div>
+      <div class="suzy-content-bio">
+        <p>
+          Suzy Rounce, a seasoned visual communicator, creative director and the
+          co-founder of Switchback Creative, has a passion for crafting
+          exceptional marketing and branding experiences alongside her partner
+          in both business and life, Trevor, a skilled full-stack web developer
+          and operations guru. With over two decades of industry experience,
+          Suzy firmly believes that storytelling is the cornerstone upon which
+          all successful companies should build their marketing strategies.
+        </p>
+        <p>
+          Suzy and Trevor, with Switchback Creative has collaborated with more
+          than 350 businesses, dedicated to forging deep connections between
+          brands and their audience’s hearts and minds through immersive digital
+          experiences. Their dedication and expertise have earned them the
+          Airdrie Business of the Year Award, coupled with finalist nods in a
+          variety of other distinguished categories over the years. They also do
+          a podcast together called, Raising a Business.
+        </p>
+        <p>
+          Suzy has been running workshops, speaking to audiences of all sizes
+          for over a decade and loves’ sharing what she knows so others can do
+          it themselves. The mission isn’t just to attract customers for your
+          business, but to transform them into passionate, devoted advocates for
+          the brands they serve. We are all storytellers and need to craft
+          digital and marketing experiences that create - not just customers,
+          but raving fans.
+        </p>
+      </div>
+    </div>
+  </Wrapper>
+</div>
