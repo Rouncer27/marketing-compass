@@ -1,0 +1,62 @@
+---
+import "./pricing.scss";
+import { Image } from "astro:assets";
+import Button from "../shared/Button.astro";
+import limitedSeats from "../../assets/limited-seats@3x.jpg";
+import details from "../../assets/mc-ad-5@3x.jpg";
+import priceBubble from "../../assets/price-bubble@3x.png";
+import Headline from "../shared/Headline.astro";
+---
+
+<div class="pricing">
+  <div class="pricing-strip">
+    <Image
+      src={limitedSeats}
+      alt={"Limited Seats Available"}
+      width={limitedSeats.width}
+      height={limitedSeats.height}
+    />
+  </div>
+  <div class="pricing-wrapper">
+    <div class="pricing-image">
+      <Image
+        src={details}
+        alt={"Tap for all of the details"}
+        width={details.width}
+        height={details.height}
+      />
+    </div>
+    <div class="pricing-content">
+      <div class="pricing-content-intro">
+        <p>
+          Gain clarity and confidence in your marketing understanding and how to
+          tie that with storytelling theory.
+        </p>
+        <p>
+          This course is focused on turning your business into a marketing
+          success story, with the knowledge and tools you’ll gain. Craft unique
+          narratives, solve problems, connect with your audience, and create
+          campaigns that resonate.
+        </p>
+      </div>
+      <div class="pricing-content-pricing">
+        <Headline ele="p"
+          >Introductory Pricing<br /> $799 for 10 hour course</Headline
+        >
+        <Headline ele="p">Standard price $1,200</Headline>
+      </div>
+      <div class="pricing-content-book">
+        <p>Workbooks, snacks & beverages included.</p>
+        <Button>Book your Spot</Button>
+      </div>
+      <div class="pricing-content-icon">
+        <Image
+          src={priceBubble}
+          alt={"Introductory Pricing"}
+          width={priceBubble.width}
+          height={priceBubble.height}
+        />
+      </div>
+    </div>
+  </div>
+</div>

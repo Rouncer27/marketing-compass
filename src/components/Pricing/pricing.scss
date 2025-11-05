@@ -1,0 +1,61 @@
+@use "../../styles/abstracts/" as *;
+
+.pricing {
+  background-color: $primaryColor;
+
+  &-strip {
+    width: 100%;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 10rem 0;
+  }
+
+  &-image {
+    width: calc(40%);
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  &-content {
+    position: relative;
+    width: calc(60% - 6rem);
+    max-width: 60rem;
+    margin-right: auto;
+    margin-left: 6rem;
+
+    &-intro {
+      width: 100%;
+      p {
+        color: $whiteColor;
+      }
+    }
+
+    &-pricing {
+      width: 100%;
+      max-width: 40rem;
+      p {
+        color: $whiteColor;
+      }
+    }
+
+    &-book {
+      width: 100%;
+      p {
+        color: $whiteColor;
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      top: 45%;
+      right: 0;
+      width: 14.1rem;
+      height: 17.1rem;
+    }
+  }
+}
