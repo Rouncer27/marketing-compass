@@ -1,18 +1,32 @@
 ---
-import MainLogo from "../components/Logos/MainLogo.astro";
 import Wrapper from "../components/shared/Wrapper.astro";
+import MainLogo from "../components/Logos/MainLogo.astro";
+import SaveYourSeatOne from "../components/Icons/SaveYourSeatOne.astro";
 import "./header.scss";
+import Headline from "../components/shared/Headline.astro";
 ---
 
 <header class="main-header">
   <Wrapper classes="main-header-wrapper">
-    <div class="main-header-logo">
-      <h1>
-        <a href="/">
-          <MainLogo />
-        </a>
-        <span>Marketing Compass Roadmap Workshops</span>
-      </h1>
+    <div class="main-header-left">
+      <div class="main-header-left-logo">
+        <h1>
+          <a href="/">
+            <MainLogo />
+          </a>
+          <span>Marketing Compass Roadmap Workshops</span>
+        </h1>
+      </div>
+      <div class="main-header-left-sys-icon">
+        <SaveYourSeatOne />
+      </div>
+    </div>
+    <div class="main-header-right">
+      <div class="main-header-right-title">
+        <Headline ele="h2" hlstyle="one"
+          >Don’t be lost in the marketing<br /> wilderness any longer</Headline
+        >
+      </div>
     </div>
   </Wrapper>
 </header>
