@@ -1,0 +1,15 @@
+@use "../styles/global/paragraphs";
+
+.footer {
+  padding: 5rem 0;
+  &-small {
+    width: 100%;
+    max-width: 92rem;
+
+    h2 {
+      @extend .p-two;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,7 +1,29 @@
 ---
-
+import Paragraph from "../components/shared/Paragraph.astro";
+import Wrapper from "../components/shared/Wrapper.astro";
+import "./footer.scss";
 ---
 
-<footer>
-    <h1>Footer</h1>
+<footer class="footer">
+  <Wrapper wrapType="stand">
+    <div class="footer-small">
+      <h2>Small Print</h2>
+      <Paragraph pstyle="two">
+        By purchasing a ticket, you agree to the following workshop terms &
+        conditions: Be nice. Have fun. Come prepared and be respectful of
+        everyone there.
+      </Paragraph>
+      <Paragraph pstyle="two">
+        Refund policy: Tickets are non-refundable but transferable. If you
+        purchase a ticket and can no longer attend, you may find someone to take
+        your spot and email their name + contact info to
+        hello@switchbackcreative.ca
+      </Paragraph>
+      <Paragraph pstyle="two">
+        Photo permission: You give us permission to take photos/videos of you at
+        the workshop to post on social media. If you’d prefer not to be in any
+        photos, just email me at hello@switchbackcreative.ca to let me know.
+      </Paragraph>
+    </div>
+  </Wrapper>
 </footer>
