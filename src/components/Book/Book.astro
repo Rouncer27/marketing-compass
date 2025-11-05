@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import Wrapper from "../shared/Wrapper.astro";
+import "./book.scss";
+import marketingWhite from "../../assets/marketingcompass-logo-white@3x.png";
+---
+
+<div>
+  <Wrapper>
+    <div>
+      <Image
+        src={marketingWhite}
+        alt={"Marketing Compass Roadmap Workshops."}
+        width={marketingWhite.width}
+        height={marketingWhite.height}
+      />
+    </div>
+  </Wrapper>
+</div>
