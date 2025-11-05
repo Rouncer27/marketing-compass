@@ -1,0 +1,98 @@
+---
+import Headline from "../shared/Headline.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import Wrapper from "../shared/Wrapper.astro";
+import "./intro.scss";
+
+import suzyLaptop from "../../assets/marketing-compass-suzy-laptop.png";
+import { Image } from "astro:assets";
+---
+
+<div class="mc-intro">
+  <Wrapper>
+    <div class="mc-intro-left">
+      <div class="mc-intro-left-title">
+        <Headline ele="h2" hlstyle="two">WORKSHOPS START IN JANUARY</Headline>
+        <Headline ele="h3" hlstyle="two"
+          >Transform your business marketing in 30 days</Headline
+        >
+      </div>
+      <div class="mc-intro-left-content">
+        <Paragraph pstyle="one">
+          If you don’t have your own marketing team or don’t have the budget to
+          hire an agency – take the bull by the horns and sign-up for this 10
+          hour Marketing Compass Course. Join Suzy in this face-to-face, 4-part
+          workshop series, as she guides you through the Marketing Wilderness
+          with a compass and a map to help you thrive.
+        </Paragraph>
+        <Paragraph>
+          Everyone talks about how much help they need with marketing. You will
+          walk away with a road map to guide your marketing, one campaign to
+          start advertising with and most importantly CLARITY on what to do and
+          how to spend your money and time.
+        </Paragraph>
+        <Paragraph>
+          This immersive in-person workshop series takes you on a journey
+          through marketing, focusing on the power of storytelling. You will
+          craft actionable marketing messages, campaigns, and strategic
+          direction for your business.
+        </Paragraph>
+        <Paragraph>
+          The Marketing Compass serves as your guide-post, leading you toward
+          your desired destination in the world of marketing. The course is
+          broken into 4 workshops, over 4 weeks.
+        </Paragraph>
+        <Paragraph>
+          The journey is filled with valuable components tailored to steer your
+          marketing efforts in the right direction.
+        </Paragraph>
+      </div>
+    </div>
+    <div class="mc-intro-right">
+      <div>
+        <div>
+          <Image
+            src={suzyLaptop}
+            alt={"Suzy Rounce sitting working on her laptop"}
+            width={suzyLaptop.width}
+            height={suzyLaptop.height}
+          />
+        </div>
+      </div>
+      <div>
+        <div>
+          <h3>WORKSHOP 1: January 22</h3>
+          <p>
+            Storytelling Perspective - <br />
+            Your Unique Selling Proposition
+          </p>
+        </div>
+        <div>
+          <h3>WORKSHOP 2: January 29</h3>
+          <p>
+            Problem-Solving - Meeting Your <br />
+            Customers’ Needs
+          </p>
+        </div>
+        <div>
+          <h3>WORKSHOP 3: February 5</h3>
+          <p>Audience Deep Dive</p>
+        </div>
+        <div>
+          <h3>WORKSHOP 4: February 12</h3>
+          <p>
+            Marketing Theme and Campaign <br />
+            Development
+          </p>
+        </div>
+        <div>
+          <p>
+            Time: 6-8:30pm
+            <br />
+            Location: Airdrie, Alberta
+          </p>
+        </div>
+      </div>
+    </div>
+  </Wrapper>
+</div>
