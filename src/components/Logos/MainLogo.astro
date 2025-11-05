@@ -1,0 +1,38 @@
+---
+import { Picture } from "astro:assets";
+
+import "./mainLogo.scss";
+import mainLogo from "../../assets/marketing-compass-roadmap-workshop.png";
+// 2️⃣ Define JSON-LD Schema (Organization with Logo)
+const logoSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Marketing Compass Roadmap Workshops",
+  url: "",
+  logo: {
+    "@type": "ImageObject",
+    url: mainLogo.src,
+    width: mainLogo.width,
+    height: mainLogo.height,
+    caption: "Marketing Compass Roadmap Workshops",
+  },
+};
+
+// 3️⃣ Stringify for inline script
+const jsonLd = JSON.stringify(logoSchema, null, 2);
+---
+
+<div class="main-logo">
+  <div class="main-logo-wrapper">
+    <Picture
+      src={mainLogo}
+      alt={"Marketing Compass Roadmap Workshops"}
+      width={mainLogo.width}
+      height={mainLogo.height}
+      formats={["avif", "webp"]}
+    />
+  </div>
+
+  <!-- 4️⃣ Inline JSON-LD Schema -->
+  <script type="application/ld+json" is:inline set:html={jsonLd} />
+</div>

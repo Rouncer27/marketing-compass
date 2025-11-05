@@ -1,7 +1,18 @@
 ---
-
+import MainLogo from "../components/Logos/MainLogo.astro";
+import Wrapper from "../components/shared/Wrapper.astro";
+import "./header.scss";
 ---
 
-<header>
-    <h1>Header</h1>
+<header class="main-header">
+  <Wrapper classes="main-header-wrapper">
+    <div class="main-header-logo">
+      <h1>
+        <a href="/">
+          <MainLogo />
+        </a>
+        <span>Marketing Compass Roadmap Workshops</span>
+      </h1>
+    </div>
+  </Wrapper>
 </header>
