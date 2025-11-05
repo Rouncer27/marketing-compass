@@ -1,0 +1,33 @@
+@use "../../styles/abstracts/" as *;
+
+.testimonials {
+  padding: 5rem 0;
+
+  &-title {
+    width: 100%;
+    text-align: center;
+
+    h2 {
+      color: $shadowColor;
+    }
+  }
+
+  &-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  &-quote {
+    width: calc(50% - 5rem);
+    margin: 2.5rem;
+    padding: 3.5rem 3.5rem 0;
+    border: solid 0.25rem $secondaryColor;
+
+    p {
+      color: $secondaryColor;
+    }
+  }
+}
