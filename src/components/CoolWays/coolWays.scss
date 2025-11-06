@@ -15,18 +15,20 @@
 
   &-block {
     width: calc(33.333333% - 4.4rem);
+    padding: 2rem;
+    background-color: #f2f4ea;
 
     &.block-one {
-      margin-right: 4.4rem;
+      margin-right: 1.33rem;
     }
 
     &.block-two {
-      margin-right: 2.2rem;
-      margin-left: 2.2rem;
+      margin-right: 0.66rem;
+      margin-left: 0.66rem;
     }
 
     &.block-three {
-      margin-left: 4.4rem;
+      margin-left: 1.33rem;
     }
 
     p {

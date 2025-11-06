@@ -3,17 +3,30 @@
 .main-header {
   &-left {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
-    width: calc(60%);
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: calc(60%);
+    }
 
     &-logo {
+      width: calc(41.96rem / 1.3);
+      max-width: 100%;
+      height: calc(17.64rem / 1.3);
       position: relative;
-      width: 41.96rem;
-      height: 17.64rem;
+      margin: 0 auto;
       padding: 0;
       overflow: hidden;
+
+      @media (min-width: 768px) {
+        width: 41.96rem;
+        height: 17.64rem;
+        margin: 0;
+      }
 
       @media (min-width: 1025px) {
       }
@@ -40,15 +53,33 @@
     }
 
     &-sys-icon {
-      width: 15.59rem;
-      height: 12.21rem;
-      margin-right: 7.5rem;
+      width: calc(15.59rem / 1.5);
+      height: calc(12.21rem / 1.5);
+      margin-top: 3rem;
+      margin-right: auto;
+      margin-bottom: -3rem;
+      margin-left: auto;
       overflow: hidden;
+
+      @media (min-width: 768px) {
+        width: 15.59rem;
+        height: 12.21rem;
+        margin-top: 0;
+        margin-right: 7.5rem;
+        margin-bottom: 0;
+        margin-left: 0;
+      }
     }
   }
 
   &-right {
-    width: calc(40%);
+    width: 100%;
+    margin-top: 2.5rem;
+
+    @media (min-width: 768px) {
+      width: calc(40%);
+      margin-top: 0;
+    }
 
     h2 {
       color: #345437;
