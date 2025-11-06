@@ -12,21 +12,37 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    padding: 10rem 0;
+    padding: 2rem;
+
+    @media (min-width: 768px) {
+      padding: 10rem 0;
+    }
   }
 
   &-image {
-    width: calc(40%);
+    width: calc(100%);
     margin-right: 0;
     margin-left: 0;
+
+    @media (min-width: 768px) {
+      width: calc(40%);
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 
   &-content {
     position: relative;
-    width: calc(60% - 6rem);
+    width: calc(100%);
     max-width: 60rem;
-    margin-right: auto;
-    margin-left: 6rem;
+    margin-top: 2.5rem;
+
+    @media (min-width: 768px) {
+      width: calc(60% - 6rem);
+      margin-top: 0;
+      margin-right: auto;
+      margin-left: 6rem;
+    }
 
     &-intro {
       width: 100%;
@@ -38,6 +54,7 @@
     &-pricing {
       width: 100%;
       max-width: 40rem;
+
       p {
         color: $whiteColor;
       }
@@ -52,10 +69,16 @@
 
     &-icon {
       position: absolute;
-      top: 45%;
+      top: 50%;
       right: 0;
-      width: 14.1rem;
-      height: 17.1rem;
+      width: calc(14.1rem / 1.75);
+      height: calc(17.1rem / 1.75);
+
+      @media (min-width: 768px) {
+        top: 45%;
+        width: 14.1rem;
+        height: 17.1rem;
+      }
     }
   }
 }

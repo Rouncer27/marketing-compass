@@ -14,21 +14,31 @@
   }
 
   &-block {
-    width: calc(33.333333% - 4.4rem);
+    margin-bottom: 2.5rem;
     padding: 2rem;
     background-color: #f2f4ea;
 
+    @media (min-width: 768px) {
+      width: calc(33.333333% - 4.4rem);
+    }
+
     &.block-one {
-      margin-right: 1.33rem;
+      @media (min-width: 768px) {
+        margin-right: 1.33rem;
+      }
     }
 
     &.block-two {
-      margin-right: 0.66rem;
-      margin-left: 0.66rem;
+      @media (min-width: 768px) {
+        margin-right: 0.66rem;
+        margin-left: 0.66rem;
+      }
     }
 
     &.block-three {
-      margin-left: 1.33rem;
+      @media (min-width: 768px) {
+        margin-left: 1.33rem;
+      }
     }
 
     p {
