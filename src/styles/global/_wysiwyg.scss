@@ -59,10 +59,10 @@
     margin-bottom: 2.5rem;
 
     li {
-      @extend .p-one;
+      @extend .p-two;
       color: $blackColor;
       position: relative;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.25em;
       padding-left: 0.75em;
 
       &::before {
@@ -81,7 +81,7 @@
     padding-left: 1.25em;
 
     li {
-      @extend .p-one;
+      @extend .p-two;
       line-height: 1;
       color: $blackColor;
       position: relative;

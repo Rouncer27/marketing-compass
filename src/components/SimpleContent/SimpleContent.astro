@@ -1,4 +1,6 @@
 ---
+import Headline from "../shared/Headline.astro";
+import Paragraph from "../shared/Paragraph.astro";
 import Wrapper from "../shared/Wrapper.astro";
 import Wysiwyg from "../shared/Wysiwyg.astro";
 import "./simpleContent.scss";
@@ -8,10 +10,12 @@ import "./simpleContent.scss";
   <Wrapper>
     <Wysiwyg>
       <div>
-        <h1>Privacy Policy</h1>
+        <Headline ele="h1" hlstyle="one">Privacy Policy</Headline>
       </div>
       <div>
-        <h2>Protecting your personal information</h2>
+        <Headline ele="h2" hlstyle="two"
+          >Protecting your personal information</Headline
+        >
         <p>
           Your privacy is important to us. It is Switchback Creative Inc’s
           policy to respect your privacy regarding any information we may
