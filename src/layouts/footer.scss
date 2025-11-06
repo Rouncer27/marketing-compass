@@ -9,7 +9,12 @@
     h2 {
       @extend .p-two;
       margin: 0;
+      opacity: 0.5;
       text-transform: uppercase;
+    }
+
+    p {
+      opacity: 0.5;
     }
   }
 }

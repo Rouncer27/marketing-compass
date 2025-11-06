@@ -10,21 +10,25 @@ import Headline from "../shared/Headline.astro";
 
 <div class="pricing">
   <div class="pricing-strip">
-    <Image
-      src={limitedSeats}
-      alt={"Limited Seats Available"}
-      width={limitedSeats.width}
-      height={limitedSeats.height}
-    />
+    <a href="https://square.link/u/1t6Brn7w" target="_blank" rel="noopener">
+      <Image
+        src={limitedSeats}
+        alt={"Limited Seats Available"}
+        width={limitedSeats.width}
+        height={limitedSeats.height}
+      />
+    </a>
   </div>
   <div class="pricing-wrapper">
     <div class="pricing-image">
-      <Image
-        src={details}
-        alt={"Tap for all of the details"}
-        width={details.width}
-        height={details.height}
-      />
+      <a href="https://square.link/u/1t6Brn7w" target="_blank" rel="noopener">
+        <Image
+          src={details}
+          alt={"Tap for all of the details"}
+          width={details.width}
+          height={details.height}
+        />
+      </a>
     </div>
     <div class="pricing-content">
       <div class="pricing-content-intro">
@@ -47,7 +51,12 @@ import Headline from "../shared/Headline.astro";
       </div>
       <div class="pricing-content-book">
         <p>Workbooks, snacks & beverages included.</p>
-        <Button>Book your Spot</Button>
+        <Button
+          ele="a"
+          href="https://square.link/u/1t6Brn7w"
+          target="_blank"
+          rel="noopener">Book your Spot</Button
+        >
       </div>
       <div class="pricing-content-icon">
         <Image
