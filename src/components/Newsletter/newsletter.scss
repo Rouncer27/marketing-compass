@@ -1,0 +1,38 @@
+@use "../../styles/abstracts/" as *;
+
+.newsletter {
+  padding: 2rem 0;
+  background-color: #345437;
+  text-align: center;
+
+  &-title {
+    width: 100%;
+
+    h2 {
+      color: $whiteColor;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &-content {
+    width: 100%;
+
+    p,
+    li {
+      color: $whiteColor;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    ul {
+      width: auto;
+    }
+  }
+
+  &-button {
+    width: 100%;
+    margin-top: 5rem;
+  }
+}

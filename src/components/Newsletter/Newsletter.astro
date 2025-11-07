@@ -1,0 +1,36 @@
+---
+import Button from "../shared/Button.astro";
+import Headline from "../shared/Headline.astro";
+import Wrapper from "../shared/Wrapper.astro";
+import "./newsletter.scss";
+---
+
+<div class="newsletter">
+  <Wrapper>
+    <div class="newsletter-title">
+      <Headline ele="h2" hlstyle="two"
+        >Not quite ready to book? Join our VIP list instead.</Headline
+      >
+    </div>
+    <div class="newsletter-content">
+      <p>
+        Join our newsletter to receive marketing resources & news about courses.
+      </p>
+      <p>Stay in the know and receive:</p>
+      <ul>
+        <li>- A free mini-guide: 5 Minutes to Raving Fans</li>
+        <li>- Resources & updates to help drive your marketing</li>
+        <li>- Exclusive bonus materials</li>
+      </ul>
+    </div>
+    <div class="newsletter-button">
+      <Button
+        ele="a"
+        target="_blank"
+        rel="noopener"
+        href="https://mailchi.mp/d1272d47ffdf/marketing-compass-vip"
+        >Stay In The Know</Button
+      >
+    </div>
+  </Wrapper>
+</div>
