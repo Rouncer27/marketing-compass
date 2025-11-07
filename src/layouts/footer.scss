@@ -1,7 +1,9 @@
+@use "../styles/abstracts/" as *;
 @use "../styles/global/paragraphs";
 
 .footer {
   padding: 5rem 0;
+
   &-small {
     width: 100%;
     max-width: 92rem;
@@ -15,6 +17,20 @@
 
     p {
       opacity: 0.5;
+    }
+  }
+
+  &-privacy {
+    width: 100%;
+    text-align: center;
+
+    a {
+      @extend .p-two;
+      opacity: 0.5;
+
+      &:hover {
+        color: $primaryColor;
+      }
     }
   }
 }
