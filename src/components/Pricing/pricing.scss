@@ -68,6 +68,7 @@
     }
 
     &-icon {
+      display: none;
       position: absolute;
       top: 50%;
       right: 0;
@@ -75,6 +76,7 @@
       height: calc(17.1rem / 1.75);
 
       @media (min-width: 768px) {
+        display: block;
         top: 45%;
         width: 14.1rem;
         height: 17.1rem;
