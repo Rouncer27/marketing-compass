@@ -16,7 +16,8 @@ import Headline from "../components/shared/Headline.astro";
             {
               Astro.url.pathname === "/" ? (
                 <MainLogo />
-              ) : Astro.url.pathname === "/speaking" ? (
+              ) : Astro.url.pathname === "/speaking" ||
+                Astro.url.pathname === "/speaking/" ? (
                 <SuzyRounce />
               ) : (
                 <MainLogo />
