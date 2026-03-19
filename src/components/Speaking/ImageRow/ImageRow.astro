@@ -1,0 +1,47 @@
+---
+import "./imageRow.scss";
+import rowOne from "../../../assets/speaking-one.jpg";
+import rowTwo from "../../../assets/speaking-two.jpg";
+import rowThree from "../../../assets/speaking-three.jpg";
+import rowFour from "../../../assets/speaking-four.jpg";
+import { Image } from "astro:assets";
+---
+
+<div class="image-row">
+  <div class="image-row-wrapper">
+    <div class="image-row-image image-one">
+      <a href="https://square.link/u/1t6Brn7w" target="_blank" rel="noopener">
+        <Image
+          src={rowOne}
+          alt={"Suzy Rounce sitting working on her laptop"}
+          width={rowOne.width}
+          height={rowOne.height}
+        />
+      </a>
+    </div>
+    <div class="image-row-image image-two">
+      <Image
+        src={rowTwo}
+        alt={"Suzy Rounce sitting working on her laptop"}
+        width={rowTwo.width}
+        height={rowTwo.height}
+      />
+    </div>
+    <div class="image-row-image image-three">
+      <Image
+        src={rowThree}
+        alt={"Suzy Rounce sitting working on her laptop"}
+        width={rowThree.width}
+        height={rowThree.height}
+      />
+    </div>
+    <div class="image-row-image image-four">
+      <Image
+        src={rowFour}
+        alt={"Suzy Rounce sitting working on her laptop"}
+        width={rowFour.width}
+        height={rowFour.height}
+      />
+    </div>
+  </div>
+</div>

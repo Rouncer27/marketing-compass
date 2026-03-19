@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import Wrapper from "../../shared/Wrapper.astro";
+import "./book.scss";
+import marketingWhite from "../../../assets/marketingcompass-logo-white@3x.png";
+import Headline from "../../shared/Headline.astro";
+import Button from "../../shared/Button.astro";
+---
+
+<div class="speaking-book">
+  <Wrapper classes="speaking-book-wrapper">
+    <div class="speaking-book-logo">
+      <Image
+        src={marketingWhite}
+        alt={"Marketing Compass Roadmap Workshops."}
+        width={marketingWhite.width}
+        height={marketingWhite.height}
+      />
+    </div>
+    <div class="speaking-book-title">
+      <Headline ele="h2" hlstyle="two"
+        >Not looking for a presenter right now,<br /> but your team could use some
+        training?</Headline
+      >
+    </div>
+    <div class="speaking-book-content">
+      <p>
+        We offer small group training and workshops for a hands-on storytelling
+        approach. Your business needs a team that fundamentally understands
+        storytelling and we can train them on how.
+      </p>
+    </div>
+    <div class="speaking-book-button">
+      <Button ele="a" href="mailto: suzyr@switchbackcreative.ca">
+        Learn More About Training
+      </Button>
+    </div>
+  </Wrapper>
+</div>

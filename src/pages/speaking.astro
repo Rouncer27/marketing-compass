@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Intro from "../components/Speaking/Intro/Intro.astro";
+import ImageRow from "../components/Speaking/ImageRow/ImageRow.astro";
+import Expect from "../components/Speaking/Expect/Expect.astro";
+import Pricing from "../components/Speaking/Pricing/Pricing.astro";
+import Feedback from "../components/Speaking/Feedback/Feedback.astro";
+import Suzy from "../components/Speaking/Suzy/Suzy.astro";
+import Book from "../components/Speaking/Book/Book.astro";
+---
+
+<Layout pathname={Astro.url.pathname}>
+  <Intro />
+  <ImageRow />
+  <Expect />
+  <Pricing />
+  <Feedback />
+  <Suzy />
+  <Book />
+</Layout>

@@ -1,0 +1,81 @@
+---
+import Headline from "../../shared/Headline.astro";
+import Paragraph from "../../shared/Paragraph.astro";
+import Wrapper from "../../shared/Wrapper.astro";
+import "./intro.scss";
+
+import suzyLaptop from "../../../assets/suzy-bio-image.png";
+import { Image } from "astro:assets";
+---
+
+<div class="speaking-mc-intro">
+  <Wrapper>
+    <div class="speaking-mc-intro-left">
+      <div class="speaking-mc-intro-left-title">
+        <Headline ele="h2" hlstyle="two"
+          >LOOKING FOR A KEYNOTE SPEAKER <br />THAT TELLS A STORY &amp; SELLS?</Headline
+        >
+      </div>
+      <div class="speaking-mc-intro-left-content">
+        <Paragraph pstyle="one">
+          <strong>Why storytelling matters right now…</strong><br /> Trust is harder
+          to earn these days. Consumers are skeptical of ads and polished sales messages.
+          Storytelling humanizes your brand and builds authenticity — which builds
+          trust.
+        </Paragraph>
+        <Paragraph>
+          Customer attention is fractured. We’re competing with endless
+          scrolling and constant notifications. Stories cut through the noise
+          because they engage emotion, not just logic. Suzy’s talks will help
+          you cut to the chase with a story.
+        </Paragraph>
+
+        <Paragraph>
+          <strong>Why your audience will care</strong><br /> People buy identity,
+          not just products. Customers want to belong and align with brands that
+          reflect who they are and who they aspire to be. Story helps them see themselves
+          in your mission. Emotion drives action. Neuroscience consistently shows
+          that emotion influences decision-making more than facts alone. Stories
+          create emotional connection — and connection leads to action.
+        </Paragraph>
+
+        <Paragraph>
+          <strong>What makes this keynote different</strong><br /> Suzy Rounce is
+          seeking to make this a rally cry for founders, marketers, and teams on
+          how to build culture, marketing, and customer experience around a single
+          compelling narrative. Her 25 years of marketing and design experience with
+          businesses give you a deep-dive perspective of what has worked over the
+          years. There are plenty of approaches that didn’t resonate so these talks
+          are fine-tuned to deliver the best and most exciting ideas.
+        </Paragraph>
+      </div>
+    </div>
+    <div class="speaking-mc-intro-right">
+      <div class="speaking-mc-intro-right-image">
+        <Image
+          src={suzyLaptop}
+          alt={"Suzy Rounce"}
+          width={suzyLaptop.width}
+          height={suzyLaptop.height}
+        />
+      </div>
+      <div class="speaking-mc-intro-right-dates">
+        <div class="speaking-mc-intro-right-dates-block">
+          <h3>Suzy Rounce</h3>
+          <h3>KEYNOTE SPEAKER</h3>
+          <p>Co-Founder, Creative Director</p>
+        </div>
+        <div class="speaking-mc-intro-right-dates-block">
+          <p>
+            We won’t just delve into theory– We’ll speak to practical and
+            applicable marketing knowledge that you can put into action
+            immediately.
+          </p>
+        </div>
+        <div class="speaking-mc-intro-right-dates-block">
+          <p>This is the plot twist your marketing needs.</p>
+        </div>
+      </div>
+    </div>
+  </Wrapper>
+</div>

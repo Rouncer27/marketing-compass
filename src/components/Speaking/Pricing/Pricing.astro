@@ -1,0 +1,49 @@
+---
+import "./pricing.scss";
+import { Image } from "astro:assets";
+import Button from "../../shared/Button.astro";
+import limitedSeats from "../../../assets/booking.jpg";
+import details from "../../../assets/suzy-laptop-speaking.jpg";
+import priceBubble from "../../../assets/price-bubble@3x.png";
+import Headline from "../../shared/Headline.astro";
+---
+
+<div class="speaking-pricing">
+  <div class="speaking-pricing-strip">
+    <a href="mailto: suzyr@switchbackcreative.ca">
+      <Image
+        src={limitedSeats}
+        alt={"Limited Seats Available"}
+        width={limitedSeats.width}
+        height={limitedSeats.height}
+      />
+    </a>
+  </div>
+  <div class="speaking-pricing-wrapper">
+    <div class="speaking-pricing-image">
+      <Image
+        src={details}
+        alt={"Tap for all of the details"}
+        width={details.width}
+        height={details.height}
+      />
+    </div>
+    <div class="speaking-pricing-content">
+      <div class="speaking-pricing-content-intro">
+        <Headline ele="h2">CURRENTLY BOOKING SPEAKING ENGAGEMENTS</Headline>
+        <p>
+          Suzy Rounce is currently booking speaking engagements for 2026/27 and
+          would love to talk about how we could make your next event one that
+          sparks more ideas.
+        </p>
+      </div>
+
+      <div class="speaking-pricing-content-book">
+        <p>Reach out for rates or questions.</p>
+        <Button ele="a" href="mailto: suzyr@switchbackcreative.ca"
+          >Learn More</Button
+        >
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+.image-row {
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-image {
+    width: calc(50% - 0.5rem);
+
+    @media (min-width: 768px) {
+      width: calc(25% - 0.45rem);
+    }
+  }
+
+  .image-one {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    @media (min-width: 768px) {
+      margin-right: 0.45rem;
+      margin-bottom: 0rem;
+    }
+  }
+  .image-two {
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    @media (min-width: 768px) {
+      margin-right: 0.3rem;
+      margin-left: 0.15rem;
+      margin-bottom: 0rem;
+    }
+  }
+  .image-three {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+
+    @media (min-width: 768px) {
+      margin-top: 0rem;
+      margin-right: 0.15rem;
+      margin-left: 0.3rem;
+    }
+  }
+  .image-four {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+
+    @media (min-width: 768px) {
+      margin-top: 0rem;
+      margin-left: 0.45rem;
+    }
+  }
+}
