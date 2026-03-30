@@ -3,6 +3,8 @@ import Wrapper from "../components/shared/Wrapper.astro";
 import MainLogo from "../components/Logos/MainLogo.astro";
 import SuzyRounce from "../components/Logos/SuzyRounce.astro";
 import SaveYourSeatOne from "../components/Icons/SaveYourSeatOne.astro";
+import BookYourEvent from "../components/Icons/BookYourEvent.astro";
+
 import "./header.scss";
 import Headline from "../components/shared/Headline.astro";
 ---
@@ -36,7 +38,16 @@ import Headline from "../components/shared/Headline.astro";
         </h1>
       </div>
       <div class="main-header-left-sys-icon">
-        <SaveYourSeatOne />
+        {
+          Astro.url.pathname === "/" ? (
+            <SaveYourSeatOne />
+          ) : Astro.url.pathname === "/speaking" ||
+            Astro.url.pathname === "/speaking/" ? (
+            <BookYourEvent />
+          ) : (
+            <MainLogo />
+          )
+        }
       </div>
     </div>
     <div class="main-header-right">
